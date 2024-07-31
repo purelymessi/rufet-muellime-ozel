@@ -19,11 +19,10 @@ const User = ({ user, repos }) => {
           <ul>
             {repos.map((repo) => (
               <li key={repo.id} className="bg-gray-100 p-2 mb-2 rounded">
-                <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                <a href={repo.html_url}  className="text-blue-600 hover:underline">
                   {repo.name}
                 </a>
                 <p className="text-gray-600">Stars: {repo.stargazers_count}</p>
-                <p className="text-gray-600">Forks: {repo.forks_count}</p>
                 <p className="text-gray-600">Issues: {repo.open_issues_count}</p>
               </li>
             ))}
